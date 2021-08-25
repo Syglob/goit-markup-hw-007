@@ -3,8 +3,13 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     margin-left: 93px;
+    &__menu {
+        display: flex;
+    }
+    &__text:not(:last-child) {
+        margin-right: 50px;
+    }
     &__link {
         color: $link-color;
         transition: $animation-250ms;
@@ -26,13 +31,5 @@
         height: 4px;
         position: absolute;
         bottom: -33px;
-    }
-}
-.navigation {
-    &__menu {
-        display: flex;
-    }
-    &__text:not(:last-child) {
-        margin-right: 50px;
     }
 }
